@@ -15,7 +15,7 @@ const features = [
 ];
 
 const PricingTable = () => (
-  <section className={tw(`bg-gradient-to-b from-gray-100 to-white shadow-inner pt-12`)}>
+  <section id="comecar-agora" className={tw(`bg-gradient-to-b from-gray-100 to-white shadow-inner pt-12`)}>
     <div className={tw(`relative max-w-7xl mx-auto mb-24`)}>
       <div className={tw(`overflow-hidden lg:max-w-none lg:flex`)}>
         <div className={tw(`py-8 px-6 md:px-0 lg:flex-shrink-1`)}>

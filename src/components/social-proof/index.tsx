@@ -4,22 +4,23 @@ import Quote from '@/constants/svg/quote.svg';
 
 const socialProofs = [
   {
-    name: `John Doe`,
-    company: `Alphabet Inc.`,
-    image: `/images/social-1.webp`,
-    text: `Commodo Lorem consequat ea consectetur pariatur proident excepteur.
-    Pariatur eiusmod minim minim ipsum tempor aute excepteur minim eu nisi laboris.
-    Duis sunt labore eu eu cupidatat labore commodo id aliquip.`,
+    name: `Maria Carolina Rocha`,
+    company: `CEO at Ótica Seu Filo.`,
+    image: `/ceo_1.jpeg`,
+    text: `Era o que faltava para a Ótica seu Filó sair mais uma vez na frente também na modalidade e-commerce.`,
   },
   {
-    name: `Jack Doe`,
-    company: `Amazon.com, Inc.`,
-    image: `/images/social-2.webp`,
-    text: `Anim labore ut amet cupidatat pariatur pariatur labore ad est.
-    Fugiat eiusmod dolore aliquip aute duis esse excepteur amet.
-    Sit cupidatat ipsum culpa nisi esse ipsum culpa in consectetur.
-    Enim incididunt do sunt ex do. Proident duis nulla minim sunt irure est
-    magna nostrud Lorem consectetur irure.`,
+    name: `Renato Gonçalves da Silva`,
+    company: `CEO at Ótica TicTac`,
+    image: `/ceo_2.jpeg`,
+    // eslint-disable-next-line max-len
+    text: `Com a ferramenta na rede de Óticas TicTac poderemos impulsionar nossas vendas no e-commerce e atender ainda mais clientes`,
+  },
+  {
+    name: `Ariane Nobre`,
+    company: `Diretora at Bali Óticas Sinop `,
+    image: `/dir_1.jpeg`,
+    text: `A ideia de vender óculos de grau on-line é muito bom, aumentaria com certeza o faturamento`,
   },
 ];
 
@@ -46,10 +47,10 @@ const SocialProof = () => {
             <div className={tw(`relative bg-white`)}>
               <Quote className={tw(`w-16 md:w-12 left-0 md:-left-2 absolute top-0 pl-4 md:pl-0 text-gray-300`)} />
               <div className={tw(`pt-20 px-6 md:px-0`)}>
-                <p className={tw(`text-gray-600 text-base pb-6`)}>{socialProofs[currentIndex].text}</p>
+                <p className={tw(`text-gray-600 text-xl pb-6`)}>{socialProofs[currentIndex].text}</p>
                 <div className={tw(`flex items-center justify-between`)}>
                   <div className={tw(`flex items-center pb-12`)}>
-                    <div className={tw(`h-12 w-12`)}>
+                    <div className={tw(`h-16 w-16`)}>
                       <img
                         src={socialProofs[currentIndex].image}
                         alt={socialProofs[currentIndex].name}
@@ -58,7 +59,7 @@ const SocialProof = () => {
                         width={48}
                       />
                     </div>
-                    <p className={tw(`text-gray-600 font-bold ml-3`)}>
+                    <p className={tw(`text-gray-600 font-bold ml-6 text-xl 	`)}>
                       {socialProofs[currentIndex].name} <br />
                       <span className={tw(`text-gray-600 text-base font-light`)}>
                         {socialProofs[currentIndex].company}

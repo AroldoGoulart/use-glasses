@@ -1,3 +1,4 @@
+/* eslint-disable no-octal */
 import { NextSeo } from 'next-seo';
 import Page from '@/components/page';
 import Header from '@/components/header';
@@ -9,7 +10,14 @@ import SocialProof from '@/components/social-proof';
 import PricingTable from '@/components/pricing-table';
 import Footer from '@/components/footer';
 
+import { hotjar } from 'react-hotjar';
+import { useEffect } from 'react';
+
 export default function Home() {
+  useEffect(() => {
+    hotjar.initialize(2688450, 6);
+  }, []);
+
   return (
     <Page>
       <NextSeo title="Use Glasses" description="Conectando visoes" />
