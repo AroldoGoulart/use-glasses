@@ -16,6 +16,7 @@ import { useEffect } from 'react';
 export default function Home() {
   useEffect(() => {
     hotjar.initialize(2688450, 6);
+    initFirebase();
   }, []);
 
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <NextSeo title="Use Glasses" description="Conectando visoes" />
       <Header />
       <main>
+        <VideoSection />
         <ListSection />
         <CasesSection />
         <SocialProof />
