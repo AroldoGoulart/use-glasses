@@ -14,7 +14,7 @@ type Link = {
 
 const secondaryLinks = [
   {
-    label: `Sobre nos`,
+    label: `Sobre nós`,
     href: `/`,
   },
 ];
@@ -100,7 +100,7 @@ const Navigation = () => {
           </div>
           <div className={tw(`hidden md:block`)}>
             <div className={tw(`ml-4 flex items-center md:ml-6`)}>
-              <Button primary>Sobre nos</Button>
+              <Button primary>Sobre nós</Button>
             </div>
           </div>
           <div className={tw(`-mr-2 flex md:hidden`)}>

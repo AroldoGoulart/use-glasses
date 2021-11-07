@@ -45,20 +45,20 @@ const ParticleBg = () => (
 
 const articles = [
   {
-    title: `Oculos 1`,
-    image: `/images/case-1.webp`,
+    title: `Óculos 1`,
+    image: `/oculos_1.jpeg`,
     alt: `Modelo primario`,
     name: `Modelo x`,
   },
   {
-    title: `Oculos 2`,
-    image: `/images/case-2.webp`,
+    title: `Óculos 2`,
+    image: `/oculos_2.jpeg`,
     alt: `Modelo secundario.`,
     name: `Modelo y`,
   },
   {
-    title: `Oculos 3`,
-    image: `/images/case-3.webp`,
+    title: `Óculos 3`,
+    image: `/oculos_3.jpg`,
     alt: `Modelo terciario`,
     name: `Modelo z`,
   },
@@ -72,9 +72,9 @@ const CasesSection = () => (
       </div>
       <div className={tw(`max-w-7xl mx-4 lg:mx-auto pt-20 lg:pt-40`)}>
         <h1 className={tw(`text-white text-4xl lg:text-5xl font-bold text-center`)}>
-          Como você quer enchergar o mundo hoje?
+          Como você quer enxergar o mundo hoje?
         </h1>
-        <p className={tw(`text-white text-gray-400 text-center text-xl mt-12`)}>Encontre o seu estilo de ser</p>
+        <p className={tw(`text-white text-gray-400 text-center text-xl mt-12`)}>Encontre o seu estilo</p>
         <div className={tw(`mx-auto pt-24`)}>
           <div className={tw(`w-full flex flex-wrap justify-around`)}>
             {articles.map((article) => (

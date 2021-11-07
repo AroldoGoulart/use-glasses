@@ -17,10 +17,10 @@ const Header = () => (
         Use Glasses
       </h1>
       <div className={tw(`max-w-xl mx-auto`)}>
-        <p className={tw(`mt-10 text-gray-500 text-center text-xl lg:text-3xl`)}>Seu oculos sem sair de casa</p>
+        <p className={tw(`mt-10 text-gray-500 text-center text-xl lg:text-3xl`)}>Seu óculos sem sair de casa</p>
       </div>
       <div className={tw(`mt-10 flex justify-center items-center w-full mx-auto`)}>
-        <Button primary>Comeco</Button>
+        <Button primary>Compre aqui</Button>
         <span className={tw(`mx-2`)}>ou</span>
         <Button>Contato</Button>
       </div>
@@ -29,8 +29,8 @@ const Header = () => (
       <div className={tw(`w-full`)}>
         <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>Apoiadores</p>
         <div className={tw(`flex items-center justify-center mx-auto flex-wrap`)}>
-          <SeuFilo className={tw(``)} />
-          <Tictac className={tw(``)} />
+          <SeuFilo className={tw(`-mt-6`)} />
+          <Tictac className={tw(`-mt-6`)} />
         </div>
       </div>
     </div>

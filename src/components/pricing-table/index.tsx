@@ -30,10 +30,10 @@ const PricingTable = () => (
             lg:flex lg:flex-col lg:justify-center lg:p-12`,
           )}
         >
-          <p className={tw(`text-lg font-medium text-gray-800`)}>Se interou? entre em contato</p>
+          <p className={tw(`text-lg font-medium text-gray-800 w-full`)}>Se interessou? entre em contato!</p>
           <input
             placeholder="Seu email de contato"
-            className={tw(`my-4 flex items-center justify-center p-2 leading-none text-gray-800`)}
+            className={tw(`my-4 flex items-center justify-center p-6 leading-none text-gray-800 w-full lg:p-2`)}
           />
           <Button primary modifier="mt-6">
             Contato de vendas

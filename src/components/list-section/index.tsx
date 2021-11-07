@@ -13,11 +13,17 @@ const defaultOptions = {
 const listItems = [
   {
     title: `Tecnologia de ponta`,
-    description: `Pediu chegou`,
+    description: `Baseada em machine learning para 
+    conversão de medidas fisicas para
+    digitais`,
   },
   {
     title: `Facil de usar`,
-    description: `Facil igual ser bloguerinha`,
+    description: `Gravação do rosto instantanamente`,
+  },
+  {
+    title: `Aumento de faturamento`,
+    description: `Venda online 24 horas`,
   },
 ];
 
