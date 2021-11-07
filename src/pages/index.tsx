@@ -16,7 +16,6 @@ export default function Home() {
       <Header />
       <main>
         <ListSection />
-        <FeatureSection />
         <CasesSection />
         <SocialProof />
         <PricingTable />

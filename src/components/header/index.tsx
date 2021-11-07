@@ -1,9 +1,8 @@
 /* eslint-disable prettier/prettier */
 import { tw, css } from 'twind/css';
 import Button from '@/components/button';
-import Netlify from '@/constants/svg/netlify.svg';
-import Nike from '@/constants/svg/nike.svg';
-import Figma from '@/constants/svg/figma.svg';
+import Tictac from '@/constants/svg/tictac.svg';
+import SeuFilo from '@/constants/svg/seu_filo.svg';
 import Aws from '@/constants/svg/aws.svg';
 
 const headerStyle = css`
@@ -27,13 +26,11 @@ const Header = () => (
       </div>
     </div>
     <div className={tw(`flex justify-center w-full`)}>
-      <div className={tw(`mt-4 w-full`)}>
-        <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>These folks get it</p>
+      <div className={tw(`w-full`)}>
+        <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>Apoiadores</p>
         <div className={tw(`flex items-center justify-center mx-auto flex-wrap`)}>
-          <Aws className={tw(`m-12 mb-8`)} width={120} />
-          <Netlify className={tw(`m-12`)} width={140} />
-          <Nike className={tw(`m-12`)} width={140} />
-          <Figma className={tw(`m-12`)} width={140} />
+          <SeuFilo className={tw(``)} />
+          <Tictac className={tw(``)} />
         </div>
       </div>
     </div>

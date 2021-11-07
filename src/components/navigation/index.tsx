@@ -12,36 +12,11 @@ type Link = {
   href: string;
 };
 
-const links = [
-  {
-    label: `Features`,
-    href: `/`,
-  },
-  {
-    label: `Testimonials`,
-    href: `/`,
-  },
-  {
-    label: `Pricing`,
-    href: `/`,
-  },
-  {
-    label: `Blog`,
-    href: `/`,
-  },
-];
+const links = [];
 
 const secondaryLinks = [
   {
-    label: `Contact sales`,
-    href: `/`,
-  },
-  {
-    label: `Log in`,
-    href: `/`,
-  },
-  {
-    label: `Get Started`,
+    label: `Sobre nos`,
     href: `/`,
   },
 ];
@@ -87,13 +62,13 @@ const MenuButton = ({ toggleMenu, showMenu }: IMenuButton) => (
 
 const MobileMenu = () => (
   <div className={tw(`md:hidden`)}>
-    <div className={tw(`px-2 pt-2 pb-3 space-y-1 sm:px-3`)}>
+    {/* <div className={tw(`px-2 pt-2 pb-3 space-y-1 sm:px-3`)}>
       {links.map((link: Link) => (
         <a href={link.href} className={tw(`text-gray-500 block px-3 py-2 text-base font-medium`)} key={link.label}>
           {link.label}
         </a>
       ))}
-    </div>
+    </div> */}
     <div className={tw(`pt-4 pb-3 border-t border-gray-400`)}>
       <div className={tw(`px-2 space-y-1`)}>
         {secondaryLinks.map((link: Link) => (
@@ -119,8 +94,10 @@ const Navigation = () => {
       <div className={tw(`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`)}>
         <div className={tw(`flex items-center justify-between h-24`)}>
           <div className={tw(`flex items-center`)}>
-            <div className={tw(`flex-shrink-0`)}>
+            <div className={tw(`flex flex-shrink-0 flex-row  items-center`)}>
               <img className={tw(`h-12 w-12`)} src="logo.svg" alt="logo" width={48} height={48} />
+              <a className={tw(`text-use tracking-wide	`)}>Use</a>
+              <a className={tw(`text-glass tracking-wide	`)}>Glasses</a>
             </div>
             <div className={tw(`hidden md:block`)}>
               <div className={tw(`ml-10 flex items-baseline space-x-4`)}>
@@ -138,9 +115,7 @@ const Navigation = () => {
           </div>
           <div className={tw(`hidden md:block`)}>
             <div className={tw(`ml-4 flex items-center md:ml-6`)}>
-              <Button modifier="border-0 mr-2">Contact sales</Button>
-              <Button modifier="border-0 mr-2">Log in</Button>
-              <Button primary>Get started</Button>
+              <Button primary>Sobre nos</Button>
             </div>
           </div>
           <div className={tw(`-mr-2 flex md:hidden`)}>
