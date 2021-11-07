@@ -19,10 +19,12 @@ const PricingTable = () => (
     <div className={tw(`relative max-w-7xl mx-auto mb-24`)}>
       <div className={tw(`overflow-hidden lg:max-w-none lg:flex`)}>
         <div className={tw(`py-8 px-6 md:px-0 lg:flex-shrink-1`)}>
-          <h2 className={tw(`text-4xl lg:text-7xl font-bold text-gray-800 mb-12`)}>Você está preparado?</h2>
-          <div>
-            <HtmlContainer />
-          </div>
+          <h2 className={tw(`text-4xl lg:text-7xl font-bold text-gray-800 mb-4`)}>Você está preparado?</h2>
+          <h3 className={tw(`text-base lg:text-xl text-gray-600 mb-4`)}>
+            Certifique-se de estar em um ambiente bem iluminado, com um cartão em mãos e após a foto posicionar os
+            icones em seus devidos locais
+          </h3>
+          <HtmlContainer />
         </div>
         <div
           className={tw(
