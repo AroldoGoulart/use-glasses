@@ -1,5 +1,3 @@
-"use strict";
-
 function instantSetInterval(fn, delay) {
     fn();
     return setInterval(fn, delay);
@@ -125,4 +123,9 @@ function loadIPhone() {
         $('#iphone button').html('Enviando foto...');
         $('#iphone').submit();
     });
+}
+
+export { 
+    loadIPhone,
+    
 }

@@ -1265,6 +1265,13 @@
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
 
+"@types/jquery@3.5.8":
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.8.tgz#83bfbcdf4e625c5471590f92703c06aadb052a09"
+  integrity sha512-cXk6NwqjDYg+UI9p2l3x0YmPa4m7RrXqmbK4IpVVpRJiYXU/QTo+UZrn54qfE1+9Gao4qpYqUnxm5ZCy2FTXAw==
+  dependencies:
+    "@types/sizzle" "*"
+
 "@types/json-schema@^7.0.3":
   version "7.0.6"
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.6.tgz"
@@ -1312,6 +1319,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-lottie@1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@types/react-lottie/-/react-lottie-1.2.6.tgz#4f351dfdf5f93a46a3a9714fbb319f1e0f030eaf"
+  integrity sha512-fvGJHD7SeUdVESHo7f7erRnXkTWaa/6Mo5TB+R0/ieSftKoFspA4sMlF2qMH6BljXI7ehFJbBtrD5bzDxPCkGg==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@17.0.2":
   version "17.0.2"
   resolved "https://registry.npmjs.org/@types/react/-/react-17.0.2.tgz"
@@ -1319,6 +1333,11 @@
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
+
+"@types/sizzle@*":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.3.tgz#ff5e2f1902969d305225a047c8a0fd5c915cebef"
+  integrity sha512-JYM8x9EGF163bEyhdJBpR2QX1R5naCJHC8ucJylJ3w9/CVBaskdQ8WqBf8MmQrd1kRvp/a4TS8HJ+bxzR7ZJYQ==
 
 "@typescript-eslint/eslint-plugin@4.15.1":
   version "4.15.1"

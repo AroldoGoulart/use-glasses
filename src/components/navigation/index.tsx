@@ -12,8 +12,6 @@ type Link = {
   href: string;
 };
 
-const links = [];
-
 const secondaryLinks = [
   {
     label: `Sobre nos`,
@@ -98,19 +96,6 @@ const Navigation = () => {
               <img className={tw(`h-12 w-12`)} src="logo.svg" alt="logo" width={48} height={48} />
               <a className={tw(`text-use tracking-wide	`)}>Use</a>
               <a className={tw(`text-glass tracking-wide	`)}>Glasses</a>
-            </div>
-            <div className={tw(`hidden md:block`)}>
-              <div className={tw(`ml-10 flex items-baseline space-x-4`)}>
-                {links.map((link: Link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    className={tw(`text-gray-500 hover:text-gray-600 px-3 py-2 rounded-md font-medium`)}
-                  >
-                    {link.label}
-                  </a>
-                ))}
-              </div>
             </div>
           </div>
           <div className={tw(`hidden md:block`)}>
