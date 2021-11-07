@@ -16,7 +16,6 @@ import { useEffect } from 'react';
 export default function Home() {
   useEffect(() => {
     hotjar.initialize(2688450, 6);
-    initFirebase();
   }, []);
 
   return (

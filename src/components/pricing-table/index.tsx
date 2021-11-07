@@ -1,8 +1,8 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import { tw } from 'twind';
 import Check from '@/constants/svg/check.svg';
 import Button from '@/components/button';
 import HtmlContainer from '@/html';
-import { useAlert } from 'react-alert';
 
 const features = [
   `Laboris nulla`,
@@ -16,8 +16,6 @@ const features = [
 ];
 
 function PricingTable() {
-  const alert = useAlert();
-
   return (
     <section id="comecar-agora" className={tw(`bg-gradient-to-b from-gray-100 to-white shadow-inner pt-12`)}>
       <div className={tw(`relative max-w-7xl mx-auto mb-24`)}>
@@ -41,13 +39,7 @@ function PricingTable() {
               placeholder="Seu email de contato"
               className={tw(`my-4 flex items-center justify-center p-6 leading-none text-gray-800 w-full lg:p-2`)}
             />
-            <Button
-              onPress={() => {
-                alert.success(`Email enviado, entraremos em contato em breve`);
-              }}
-              primary
-              modifier="mt-6"
-            >
+            <Button onPress={() => {}} primary modifier="mt-6">
               Contato de vendas
             </Button>
           </div>
